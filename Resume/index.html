@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio | Resume</title>
+    <meta name="description" content="Personal portfolio and resume showcasing projects, experience, and skills.">
+    <meta name="theme-color" content="#0b1020">
+    <meta property="og:title" content="Portfolio | Resume">
+    <meta property="og:description" content="Personal portfolio and resume showcasing projects, experience, and skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-Vn+Z8d8wk3bQw0z9r3rUqXHcQ0P2iWQeYB1xQp7tq8lYbP8j8q7sA4M9b3bV8m1k2S3o2r3n1y9jZf6p+LwZnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <div class="intro-trail" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"></div>
+    <div class="page-transition" aria-hidden="true"></div>
+    <header class="site-header">
+        <div class="container nav-container">
+			<a href="#home" class="logo" aria-label="Home"> <span>✦</span> Illia Melnykov</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+            <nav class="site-nav" role="navigation">
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" role="group" aria-label="Language switcher">
+                <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                <button class="lang-btn" data-lang="uk" aria-pressed="false">UA</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="section hero">
+            <div class="container hero-grid">
+                <div class="hero-copy wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
+					<h1 data-i18n="hero.title">Hi, I'm <span class="accent anim-gradient">Illia Melnykov</span></h1>
+                    <p class="lead" data-i18n="hero.subtitle">Front-end Developer crafting delightful, fast, accessible web experiences.</p>
+					<div class="hero-cta">
+						<a class="btn primary magnetic" href="#projects" data-i18n="cta.viewProjects">View Projects</a>
+						<a class="btn ghost magnetic" href="#contact" data-i18n="cta.contactMe">Contact Me</a>
+					</div>
+                </div>
+                <div class="hero-art wow animate__animated animate__zoomIn" data-wow-delay="0.15s" aria-hidden="true">
+                    <!-- Decorative SVG Illustration -->
+                    <svg class="orb" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decorative orb">
+                        <defs>
+                            <radialGradient id="grad" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#8b5cf6"/>
+                                <stop offset="50%" stop-color="#6366f1"/>
+                                <stop offset="100%" stop-color="#0ea5e9"/>
+                            </radialGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <circle cx="100" cy="100" r="80" fill="url(#grad)" filter="url(#glow)"></circle>
+                        <g class="orbits">
+                            <ellipse cx="100" cy="100" rx="95" ry="35" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.2"/>
+                            <ellipse cx="100" cy="100" rx="60" ry="90" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <!-- SVG Wave Divider -->
+			<div class="wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,64L48,58.7C96,53,192,43,288,42.7C384,43,480,53,576,61.3C672,69,768,75,864,74.7C960,75,1056,69,1152,58.7C1248,48,1344,32,1392,24L1440,16L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="currentColor" />
+                </svg>
+            </div>
+			<!-- Floating particles -->
+			<div class="particles" aria-hidden="true"></div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section about">
+            <div class="container grid-2">
+                <div class="wow animate__animated animate__fadeInLeft">
+                    <h2 data-i18n="about.heading">About</h2>
+                    <p data-i18n="about.p1">I specialize in building interfaces that are fast, accessible, and beautiful. I enjoy working with modern stacks and bringing ideas to life through motion and micro-interactions.</p>
+                    <p data-i18n="about.p2">When not coding, I like sketching UI ideas, exploring new CSS tricks, and learning about performance.</p>
+                </div>
+                <div class="card wow animate__animated animate__fadeInRight">
+                    <ul class="bullets">
+                        <li data-i18n="about.b1">Clean, maintainable code</li>
+                        <li data-i18n="about.b2">Attention to detail</li>
+                        <li data-i18n="about.b3">Accessible by default</li>
+                        <li data-i18n="about.b4">Performance focused</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="wow animate__animated animate__fadeInUp" data-i18n="skills.heading">Skills</h2>
+                <div class="skills-grid">
+					<div class="skill wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
+						<span data-i18n="skills.html">HTML5</span>
+                        <div class="bar"><span data-progress="95"></span></div>
+                        <span class="percent" data-count="95">0%</span>
+					</div>
+					<div class="skill wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+						<span data-i18n="skills.css">CSS3 / Sass</span>
+                        <div class="bar"><span data-progress="92"></span></div>
+                        <span class="percent" data-count="92">0%</span>
+					</div>
+					<div class="skill wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+						<span data-i18n="skills.js">JavaScript</span>
+                        <div class="bar"><span data-progress="90"></span></div>
+                        <span class="percent" data-count="90">0%</span>
+					</div>
+					<div class="skill wow animate__animated animate__fadeInUp" data-wow-delay="0.25s">
+						<span data-i18n="skills.a11y">Accessibility</span>
+                        <div class="bar"><span data-progress="88"></span></div>
+                        <span class="percent" data-count="88">0%</span>
+					</div>
+					<div class="skill wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+						<span data-i18n="skills.perf">Performance</span>
+                        <div class="bar"><span data-progress="83"></span></div>
+                        <span class="percent" data-count="83">0%</span>
+					</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="wow animate__animated animate__fadeInUp" data-i18n="projects.heading">Projects</h2>
+                <div class="cards">
+                    <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
+                        <h3 data-i18n="projects.p1.title">Project One</h3>
+                        <p data-i18n="projects.p1.desc">High-performance landing page with SVG animations and responsive layout.</p>
+                        <a href="https://ilya11melnikov.github.io/Landing_cruise/docs/" class="btn small" data-i18n="projects.view">View</a>
+                    </article>
+                    <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                        <h3 data-i18n="projects.p2.title">Project Two</h3>
+                        <p data-i18n="projects.p2.desc">Interactive dashboard featuring charts, filters, and delightful microinteractions.</p>
+                        <a href="https://ilya11melnikov.github.io/Landing_power_agency/docs/#" class="btn small" data-i18n="projects.view">View</a>
+                    </article>
+                    <!-- <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+                        <h3 data-i18n="projects.p3.title">Project Three</h3>
+                        <p data-i18n="projects.p3.desc">Accessible design system with reusable components and documentation.</p>
+                        <a href="#" class="btn small" data-i18n="projects.view">View</a>
+                    </article> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <!-- <section id="experience" class="section experience">
+            <div class="container">
+                <h2 class="wow animate__animated animate__fadeInUp" data-i18n="exp.heading">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.05s">
+                        <span class="time" data-i18n="exp.r1.time">2023 — Present</span>
+                        <h3 data-i18n="exp.r1.title">Front-end Engineer, Company</h3>
+                        <p data-i18n="exp.r1.desc">Leading front-end architecture, performance improvements, and UI animations.</p>
+                    </div>
+                    <div class="timeline-item wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
+                        <span class="time" data-i18n="exp.r2.time">2021 — 2023</span>
+                        <h3 data-i18n="exp.r2.title">Web Developer, Studio</h3>
+                        <p data-i18n="exp.r2.desc">Built responsive websites and SPAs with focus on accessibility and DX.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <div class="container grid-2">
+                <div class="wow animate__animated animate__fadeInUp">
+                    <h2 data-i18n="contact.heading">Contact</h2>
+                    <p data-i18n="contact.desc">Have a project in mind or want to say hi? Let's talk.</p>
+                </div>
+                <form class="contact-form wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" name="contact" action="https://formsubmit.co/ilya11melnikov@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New message from Portfolio site">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="row">
+                        <label>
+                            <span data-i18n="contact.name">Name</span>
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </label>
+                        <label>
+                            <span data-i18n="contact.email">Email</span>
+                            <input type="email" name="email" placeholder="your@email.com" required>
+                        </label>
+                    </div>
+                    <label>
+                        <span data-i18n="contact.message">Message</span>
+                        <textarea name="message" rows="4" placeholder="How can I help?" required></textarea>
+                    </label>
+                    <button class="btn primary" type="submit" data-i18n="contact.send">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p data-i18n="footer.copy">© <span id="year"></span> All rights reserved.</p>
+            <div class="socials">
+                <a href="https://github.com/ilya11melnikov" aria-label="GitHub">GH</a>
+                <a href="https://www.linkedin.com/in/illia-melnykov-193828311/" aria-label="LinkedIn">LI</a>
+                <a href="https://t.me/ilyxaaaaaaaa" aria-label="Telegram">TG</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-CFy3jQvQ9g7cHh1OaQhH6VJbWw5wQ8k7nq4Jq9mWQpX8JkQ8p1X0qQJx7iE0Gk2m1yLJtN3N2xRr2p3b8JvT8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <button id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+</body>
+</html>
+
