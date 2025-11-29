@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
       'projects.p2.title': 'Проєкт 2',
       'projects.p2.desc': 'Інтерактивна панель з графіками, фільтрами та мікровзаємодіями.',
       'projects.p3.title': 'Проєкт 3',
-      'projects.p3.desc': 'Доступна дизайн-система з багаторазовими компонентами та документацією.',
+      'projects.p3.desc': 'Онлайн-планувальник подорожей, де ти шукаєш місця й складаєш маршрут по днях.',
       'projects.view': 'Переглянути',
       'exp.heading': 'Досвід',
       'exp.r1.time': '2023 — дотепер',
